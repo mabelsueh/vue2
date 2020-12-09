@@ -10,6 +10,7 @@
       <input type="text" v-model="preferedColor"/>
       <Light></Light>
       <SayGreetings/>
+      <Counter/>
   </div>
 </template>
 
@@ -20,11 +21,12 @@
 import MessageBox from './components/MessageBox.vue'
 import Light from './components/Light.vue'
 import SayGreetings from './components/SayGreetings.vue'
+import Counter from './components/Counter.vue'
 
 export default {
   name: 'App',
   components: {
-      MessageBox, Light, SayGreetings
+      MessageBox, Light, SayGreetings,Counter
   },
 
   data: function(){

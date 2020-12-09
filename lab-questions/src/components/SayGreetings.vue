@@ -1,9 +1,9 @@
 <template>
   <div>
     <h1>{{text}}</h1>
-    <button @click="buttonPressed1">Say Hi</button>
-    <button @click="buttonPressed2">Say Goodbye</button>
-    <button @click="buttonPressed3">Sleep</button>
+    <button @click="sayHello">Say Hi</button>
+    <button @click="sayGoodbye">Say Goodbye</button>
+    <button @click="sayZzz">Sleep</button>
   </div>
 </template>
 
@@ -16,15 +16,15 @@ export default {
     };
   },
   methods: {
-    buttonPressed1: function () {
+    sayHello: function () {
       //  links back to the data with the key 'text'
       this.text = "Hello World";
     },
-    buttonPressed2: function () {
+    sayGoodbye: function () {
       //  links back to the data with the key 'text'
       this.text = "Goodbye World";
     },
-    buttonPressed3: function () {
+    sayZzz: function () {
       //  links back to the data with the key 'text'
       this.text = "zzz...zzz...zzz";
     },
