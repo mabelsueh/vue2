@@ -4,6 +4,7 @@
     <button @click="sayHello">Say Hi</button>
     <button @click="sayGoodbye">Say Goodbye</button>
     <button @click="sayZzz">Sleep</button>
+    <br><br>
   </div>
 </template>
 
