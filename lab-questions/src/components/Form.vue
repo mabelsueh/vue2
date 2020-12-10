@@ -29,6 +29,37 @@
                 <br><br>
             </div>
 
+            <!-- adding them checkboxes (returns VALUES in array for the {{}}) -->
+            <div>
+                <label>Check Your Interests: </label>
+                <br>
+                <input type="checkbox" value="Reading" v-model="interests">Reading
+                <input type="checkbox" value="Sleeping" v-model="interests">Sleeping
+                <input type="checkbox" value="Music" v-model="interests">Music
+                <input type="checkbox" value="Television" v-model="interests">Television
+                <br><br>
+            </div>
+            <div>
+                <label> Check Your Leisure Activities: </label>
+                <br>
+                <input type="checkbox" value="Sports" v-model="leisure">Sports
+                <input type="checkbox" value="Reading" v-model="leisure">Reading
+                <input type="checkbox" value="Sleeping" v-model="leisure">Sleeping
+                <input type="checkbox" value="Eating" v-model="leisure">Eating
+                <input type="checkbox" value="Hanging" v-model="leisure">Hanging Out
+                <br><br>
+            </div>
+
+            <!-- adding option value selector (select one only)-->
+            <div>
+                <label>How Did You Discover Us?</label>
+                <br>
+                <select v-model="hearAbout">
+                    <option value="Friends">Friends</option>
+                    <option value="Facebook">Facebook</option>
+                    <option value="Email">From Email</option>
+                </select>
+            </div>
         </form>
         <!-- area to display them deets -->
         <div>
@@ -37,6 +68,9 @@
                 <li>Registered First Name: {{first_name}}</li>
                 <li>Registered Gender: {{gender}}</li>
                 <li>Registered Employment Status: {{employment}}</li>
+                <li>Registered Interests: {{interests}}</li>
+                <li>Registered Leisure Activities: {{leisure}}</li>
+                <li>Registered Survey: {{hearAbout}}</li>
             </ul>
         </div>
     </div>
@@ -50,7 +84,10 @@ export default {
             'gender':'',
             // dont actually need them quotes, its to avoid confusion or something
             employment:'',
-
+            // need to put in array cause of multi option
+            interests: [],
+            leisure: [],
+            hearAbout: '',
         }
     }
 }
