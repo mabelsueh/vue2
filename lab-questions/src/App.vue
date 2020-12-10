@@ -1,6 +1,7 @@
 // this is the view
 <template>
   <div id="app">
+      <h1> Vue Lab</h1>
       <MessageBox message="This is a msg from the props (property) area in MessageBox.vue" bgcolor="orange"></MessageBox>
       <MessageBox messsage="Another color here please" v-bind:bgcolor="preferedColor"></MessageBox>
       <!-- displays whatever was in the 'text' string  -->
@@ -12,6 +13,7 @@
       <SayGreetings/>
       <Counter/>
       <Dice/>
+      <Form/>
   </div>
 </template>
 
@@ -24,11 +26,12 @@ import Light from './components/Light.vue'
 import SayGreetings from './components/SayGreetings.vue'
 import Counter from './components/Counter.vue'
 import Dice from './components/Dice.vue'
+import Form from './components/Form.vue'
 
 export default {
   name: 'App',
   components: {
-      MessageBox, Light, SayGreetings,Counter, Dice
+      MessageBox, Light, SayGreetings,Counter, Dice, Form
   },
 
   data: function(){
@@ -50,12 +53,12 @@ export default {
 
 // this is the styling
 <style>
-/* #app {
+#app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+  /* text-align: center; */
   color: #2c3e50;
   margin-top: 60px;
-} */
+}
 </style>

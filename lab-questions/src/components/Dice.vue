@@ -5,6 +5,7 @@
     </div>
     <br>
     <button @click="randomize">Roll Dice</button>
+    <br><br>
   </div>
 </template>
 
