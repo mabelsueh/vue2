@@ -11,6 +11,7 @@
       <Light></Light>
       <SayGreetings/>
       <Counter/>
+      <Dice/>
   </div>
 </template>
 
@@ -22,11 +23,12 @@ import MessageBox from './components/MessageBox.vue'
 import Light from './components/Light.vue'
 import SayGreetings from './components/SayGreetings.vue'
 import Counter from './components/Counter.vue'
+import Dice from './components/Dice.vue'
 
 export default {
   name: 'App',
   components: {
-      MessageBox, Light, SayGreetings,Counter
+      MessageBox, Light, SayGreetings,Counter, Dice
   },
 
   data: function(){
