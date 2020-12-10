@@ -59,6 +59,18 @@
                     <option value="Facebook">Facebook</option>
                     <option value="Email">From Email</option>
                 </select>
+                <br><br>
+            </div>
+            <div>
+                <label>Nationality</label>
+                <br>
+                <select v-model="nationality">
+                    <option value="Singapore">Singaporean</option>
+                    <option value="Malaysia">Malaysian</option>
+                    <option value="Thailand">Thai</option>
+                    <option value="Indonesia">Indonesian</option>
+                    <br><br>
+                </select>
             </div>
         </form>
         <!-- area to display them deets -->
@@ -71,6 +83,7 @@
                 <li>Registered Interests: {{interests}}</li>
                 <li>Registered Leisure Activities: {{leisure}}</li>
                 <li>Registered Survey: {{hearAbout}}</li>
+                <li>Registered Nationality: {{nationality}}</li>
             </ul>
         </div>
     </div>
@@ -88,6 +101,7 @@ export default {
             interests: [],
             leisure: [],
             hearAbout: '',
+            nationality: '',
         }
     }
 }
