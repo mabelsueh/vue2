@@ -14,6 +14,7 @@
       <Counter/>
       <Dice/>
       <Form/>
+      <Sum/>
   </div>
 </template>
 
@@ -27,11 +28,13 @@ import SayGreetings from './components/SayGreetings.vue'
 import Counter from './components/Counter.vue'
 import Dice from './components/Dice.vue'
 import Form from './components/Form.vue'
+import Sum from './components/Sum.vue'
+
 
 export default {
   name: 'App',
   components: {
-      MessageBox, Light, SayGreetings,Counter, Dice, Form
+      MessageBox, Light, SayGreetings,Counter, Dice, Form, Sum
   },
 
   data: function(){
