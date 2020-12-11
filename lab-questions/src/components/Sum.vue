@@ -13,6 +13,7 @@
       <button @click="num3">Sum</button>
       <br>
       <span>The sum is: {{ result}}</span>
+      <br><br>
   </div>
 </template>
 
