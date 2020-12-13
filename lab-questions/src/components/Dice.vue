@@ -1,11 +1,26 @@
 <template>
   <div>
-    <div class="container dice">
-      {{ number }}<span class="even" v-if="number%2==0">!</span>
+    <div class="container dice" v-if="number % 2 == 0">
+      <div v-if="number == 6">
+        <p v-bind:style="{ color: 'green' }">{{ number }}!</p>
+      </div>
+      <div v-else>
+        <p>{{ number }}!</p>
+      </div>
+      <br />
     </div>
-    <br>
+    <div class="container dice" v-else>
+      <div v-if="number == 1">
+        <p v-bind:style="{ color: 'red' }">{{ number }}</p>
+      </div>
+      <div v-else>
+        <p>{{ number }}</p>
+      </div>
+      <br />
+    </div>
+    <br />
     <button @click="randomize">Roll Dice</button>
-    <br><br>
+    <br /><br />
   </div>
 </template>
 
@@ -27,12 +42,11 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: red;
   width: 100px;
   height: 100px;
   border: 1px solid black;
 }
 .even {
-    color: black;
+  color: black;
 }
 </style>
