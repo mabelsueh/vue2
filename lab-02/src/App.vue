@@ -1,17 +1,17 @@
 <template>
   <div id="app">
-      <Form/>
+      <Game/>
   </div>
 </template>
 
 <script>
 
-import Form from './components/Form.vue'
+import Game from './components/Game.vue'
 
 export default {
   name: 'App',
   components: {
-    Form, 
+    Game, 
   }
 }
 </script>
